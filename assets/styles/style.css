@@ -138,6 +138,16 @@ nav ul {
   display: none;
 }
 
+#submenu ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#submenu ul li a:hover {
+  text-decoration: none;
+  color: var(--CorPrincipal);
+  transition: .2s ease-in-out;
+}
 
 footer {
   position: fixed;
@@ -251,4 +261,12 @@ footer {
   padding: 9rem;
   border: 1px solid var(--CorPrincipal);
   border-radius: 5px
+}
+
+/*************/
+
+.backg5 {
+  text-align: center;
+  padding: 6rem 3.5rem 5rem 3.5rem;
+  color: #212121;
 }
