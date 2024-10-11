@@ -37,8 +37,13 @@ document.addEventListener('scroll', () => {
   if (planosPosition.top <= 0 && planosPosition.bottom >= 0) {
     header.classList.remove('hidden');
     header.classList.add('visible');
+    submenu.classList.add('visible');
+    submenu.classList.remove('hidden');
   } else {
     header.classList.remove('visible');
     header.classList.add('hidden');
+    submenu.classList.remove('visible');
+    submenu.classList.add('hidden');
+    
   }
 });

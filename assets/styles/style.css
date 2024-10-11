@@ -279,7 +279,6 @@ footer #anoAtual{
   padding: 5rem;
   border: 1px solid var(--CorPrincipal);
   border-radius: 5px;
-  position: relative;
 }
 
 .backg3 .plan3 {
@@ -287,7 +286,6 @@ footer #anoAtual{
   padding: 5rem;
   border: 1px solid var(--CorPrincipal);
   border-radius: 5px;
-  position: relative;
 }
 
 .backg3 .plan1 i {
@@ -295,12 +293,14 @@ footer #anoAtual{
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 1000;
 }
 
 .backg3 .plan1 ul,
 .backg3 .plan2 ul,
-.backg3 .plan3 ul {}
+.backg3 .plan3 ul {
+  
+  
+}
 
 /*************/
 
@@ -314,7 +314,7 @@ footer #anoAtual{
   margin-top: 5rem;
   padding: 1rem;
   border: 1px solid var(--CorPrincipal);
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .backg4 .horarios .DAY{
@@ -328,11 +328,16 @@ footer #anoAtual{
   margin: 0 auto 5px auto;
 }
 
+.backg4 .horarios .HDays ul{
+  list-style-type: none
+}
+
 .backg4 .horarios .HDays {
-  width: 150px;
-  text-align: left;
+  width: 170px;
+  text-align: center;
   margin: 0 auto;
   font-family: 'Trebuchet MS';
+  font-size: 13px
 }
 
 /*************/
