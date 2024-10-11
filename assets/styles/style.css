@@ -2,6 +2,30 @@
   --CorPrincipal: #732DFF;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--CorPrincipal);
+  border-radius: 5px;
+}
+
+::selection {
+  background-color: var(--CorPrincipal);
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background-color: var(--CorPrincipal);
+  color: #ffffff;
+}
+
 body {
   font-family: Impact;
   margin: 0 auto;
@@ -13,19 +37,57 @@ html {
 
 header {
   position: fixed;
-  width: 100%;
-  background-color: #212121;
-  color: #ffffff;
+
+  border: 1px solid #252525;
+  border-radius: 5rem;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  width: 90%;
+
+
+  background: #212121;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+header .HeadERport {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .title {
+  margin: 0;
+  font-size: 24px;
 }
 
 header ul {
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
-header ul li{
-  padding: 0 19px 0 0px;
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: var(--CorPrincipal);
 }
 
 footer {
@@ -38,10 +100,11 @@ footer {
   justify-content: center
 }
 
-
-
-
 /*************/
+
+.FIT {
+  color: var(--CorPrincipal);
+}
 
 .backg1 {
   text-align: center;
@@ -60,6 +123,25 @@ footer {
 
 .nomeEmp {
   font-size: 99px;
+  background: linear-gradient(90deg, #FFFFFF, var(--CorPrincipal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 4s ease-in-out infinite;
+  animation-delay: 4s;
+  transition: .5s ease-in-out;
+  background-size: 5555% 300%;
+}
+
+@keyframes gradientAnimation {
+
+  0%,
+  100% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
 }
 
 .slogan {
@@ -90,13 +172,6 @@ footer {
   font-size: 65px;
 }
 
-.backg2 .carrosel {
-  margin-top: 5rem;
-  padding: 5rem;
-  border: 1px solid var(--CorPrincipal);
-  border-radius: 5px
-}
-
 /*************/
 
 .backg3 {
@@ -105,7 +180,23 @@ footer {
   color: #212121;
 }
 
-.backg3 .horarios {
+.backg3 .carrosel {
+  margin-top: 5rem;
+  padding: 5rem;
+  border: 1px solid var(--CorPrincipal);
+  border-radius: 5px
+}
+
+
+/*************/
+
+.backg4 {
+  text-align: center;
+  padding: 6rem 3.5rem 5rem 3.5rem;
+  color: #212121;
+}
+
+.backg4 .horarios {
   margin-top: 5rem;
   padding: 9rem;
   border: 1px solid var(--CorPrincipal);
