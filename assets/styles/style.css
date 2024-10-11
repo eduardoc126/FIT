@@ -54,7 +54,7 @@ header {
   transition: background 0.3s ease;
 }
 
-header .HeadERport {
+header .h-aligns {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,20 +62,11 @@ header .HeadERport {
   padding: 0 20px;
 }
 
-header .title {
-  margin: 0;
-  font-size: 24px;
-}
-
 header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-header ul li {
-  margin-left: 20px;
 }
 
 header ul li a {
@@ -90,6 +81,39 @@ header ul li a:hover {
   color: var(--CorPrincipal);
 }
 
+nav ul {
+  list-style: none;
+}
+
+.h-btn {
+  cursor: pointer;
+  width: 20px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h-btn span {
+  display: block;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.h-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.h-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.h-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -97,7 +121,8 @@ footer {
   color: #FFFFFF;
   width: 100%;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  font-size: 10px
 }
 
 /*************/
