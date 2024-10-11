@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 const hbtn = document.getElementById('menu-btn');
+const submenu = document.getElementById('submenu');
 
 hbtn.addEventListener('click', function() {
   hbtn.classList.toggle('active');
+  submenu.classList.toggle('off');
 });
