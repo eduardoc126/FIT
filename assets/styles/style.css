@@ -274,12 +274,6 @@ footer #anoAtual {
   position: relative;
 }
 
-.backg3 .plan2 {
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--CorPrincipal);
-  border-radius: 5px;
-}
 
 .backg3 .plan3 {
   margin-top: 1rem;
@@ -296,14 +290,19 @@ footer #anoAtual {
 }
 
 .backg3 .text-plans span{
-  font-size: 25px;
+  font-size: 27px;
+  width: 150px;
 }
 
 .backg3 .text-plans p{
   font-family: 'Trebuchet MS';
   text-align: left;
-  margin: 5px auto;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  width: 135px;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 6px;
 }
 
 /*************/
