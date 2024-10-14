@@ -1,13 +1,13 @@
 //////////////////////////////
 
 
-window.onload = function() {
+window.onload = function () {
   document.getElementById("anoAtual").textContent = new Date().getFullYear();
 };
 
 //////////////////////////////
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   AOS.init({
     duration: 1000,
     once: false
@@ -18,11 +18,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const hbtn = document.getElementById('menu-btn');
 const submenu = document.getElementById('submenu');
+const closesbm = document.getElementsByClassName('close-sbm');
 
-hbtn.addEventListener('click', function() {
+
+hbtn.addEventListener('click', function () {
   hbtn.classList.toggle('active');
   submenu.classList.toggle('off');
 });
+
+for (let i = 0; i < closesbm.length; i++) {
+  closesbm[i].addEventListener('click', function () {
+    hbtn.classList.remove('active');
+    submenu.classList.add('off');
+  });
+}
 
 //////////////////////////////
 
@@ -44,6 +53,6 @@ document.addEventListener('scroll', () => {
     header.classList.add('hidden');
     submenu.classList.remove('visible');
     submenu.classList.add('hidden');
-    
+
   }
 });

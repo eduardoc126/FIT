@@ -14,12 +14,12 @@
   <meta name="theme-color" content="#212121">
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       var originalTitle = document.title;
       var blinkingTitle = "Academia";
       var isBlinking = false;
 
-      setInterval(function() {
+      setInterval(function () {
         if (isBlinking) {
           document.title = originalTitle;
         } else {
@@ -53,8 +53,10 @@
 
   <div id="submenu" class="off">
     <ul>
-      <li>Uteis</li>
-      <li><a href="#endereco">Endereço</a></li>
+      <li><a class="close-sbm" href="#sobre">Sobre</a></li>
+      <li><a class="close-sbm" href="#planos">Planos</a></li>
+      <li><a class="close-sbm" href="#horarios">Horários</a></li>
+      <li><a class="close-sbm" href="#endereco">Endereço</a></li>
     </ul>
   </div>
 
@@ -63,7 +65,8 @@
       <p>
         <span class="nomeEmp">FIT</span>
         <br>
-        <q data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000"><span class="slogan">Transforme seu corpo, desperte sua força</span></q>
+        <q data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000"><span class="slogan">Transforme seu corpo,
+            desperte sua força</span></q>
       </p>
       <a href="#" class="agendamento">AGENDE JÁ</a>
     </div>
@@ -72,10 +75,12 @@
       <section id="sobre">
         <div class="backg2">
           <p>
-            <div class="SubTitulo" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">SOBRE NÓS</div>
-            <br>
-          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-            Somos uma academia moderna e acessível, dedicada a promover saúde e bem-estar. Com uma ampla gama de equipamentos e treinos personalizados, a <span class="FIT">FIT</span> oferece desde musculação à aulas de artes marciais, tudo em um ambiente motivador.
+          <div class="SubTitulo" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">QUEM SOMOS?</div>
+          <br>
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" class="about-more">
+            Uma academia moderna e acessível, dedicada a promover saúde e bem-estar. Com uma ampla gama de
+            equipamentos e treinos personalizados, a <span class="FIT">FIT</span> oferece desde musculação à aulas de
+            artes marciais, tudo em um ambiente motivador.
           </div>
           </p>
         </div>
@@ -84,33 +89,35 @@
       <section id="planos">
         <div class="backg3">
           <p>
-            <div class="SubTitulo" data-aos="fade-up">PLANOS</div>
-            <br>
-          <div class="plan1" data-aos="fade-up">
-            <i class="fas fa-star fa-beat-fade"></i>
-            <div class="text-plans">
-              <span>MUSCULAÇÃO</span>
-              <p>
-                • Treinos de hipertrofia, funcional, cardio e etc..
-              </p>
+          <div class="SubTitulo" data-aos="fade-up">PLANOS</div>
+          <br>
+          <div class="plans">
+            <div class="plan1" data-aos="fade-up">
+              <i class="fas fa-star fa-beat-fade"></i>
+              <div class="text-plans">
+                <span>Musculação</span>
+                <p>
+                  Treinos de hipertrofia, funcional, cardio e etc..
+                </p>
+              </div>
+            </div>
+
+            <div class="plan2" data-aos="fade-up">
+              <div class="text-plans">
+                <span>Artes Marciais</span>
+                <p>
+                  Muay-Thai
+                  <br>
+                  Jiu-Jitsu
+                  <br>
+                </p>
+              </div>
             </div>
           </div>
-          
-          <div class="plan3" data-aos="fade-up">
-            <div class="text-plans">
-              <span>Artes Marciais</span>
-              <p>
-                • Muay-Thai
-                <br>
-                • Jiu-Jitsu
-              </p>
-            </div>
-          </div>
-          </p>
         </div>
       </section>
 
-      <section class="horarios" >
+      <section id="horarios">
         <div class="backg4">
           <p>
             <span class="SubTitulo" data-aos="fade-up">HORÁRIOS</span>
@@ -169,9 +176,12 @@
           <span class="SubTitulo" data-aos="zoom-out">ENDEREÇO</span>
           <br>
           <div class="enderecos">
-            <a data-aos="zoom-in" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Xique-Xique,+Bahia"><i class="fas fa-location-dot"></i>&nbsp; Xique-Xique, BA</a>
+            <a data-aos="zoom-in" target="_blank"
+              href="https://www.google.com/maps/search/?api=1&query=Xique-Xique,+Bahia"><i
+                class="fas fa-location-dot"></i>&nbsp; Xique-Xique, BA</a>
             <br>
-            <a data-aos="zoom-in" href="telprompt://0? handleType=phoneNumber"><i class="fas fa-phone"></i>&nbsp; (21) 98765-4321</a>
+            <a data-aos="zoom-in" href="telprompt://0? handleType=phoneNumber"><i class="fas fa-phone"></i>&nbsp; (21)
+              98765-4321</a>
             <br>
             <a data-aos="zoom-in" href="mailto:"><i class="fas fa-envelope"></i>&nbsp; Fit@gmail.com</a>
           </div>
@@ -179,7 +189,8 @@
       </section>
 
       <section class="informations">
-        Site created by <a style="color: var(--CorPrincipal); text-decoration: none" href="https://marcoseduardo.dev.br" target="_blank">@eduardo_c126</a>, all rights reserved!
+        Site created by <a style="color: var(--CorPrincipal); text-decoration: none" href="https://marcoseduardo.dev.br"
+          target="_blank">@eduardo_c126</a>, all rights reserved!
       </section>
     </section>
   </main>
