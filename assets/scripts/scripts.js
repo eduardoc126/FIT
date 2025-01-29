@@ -1,13 +1,12 @@
 //////////////////////////////
 
-
-window.onload = function () {
+window.onload = () => {
   document.getElementById("anoAtual").textContent = new Date().getFullYear();
 };
 
 //////////////////////////////
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   AOS.init({
     duration: 1000,
     once: false
@@ -19,22 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
 const hbtn = document.getElementById('menu-btn');
 const submenu = document.getElementById('submenu');
 const closesbm = document.getElementsByClassName('close-sbm');
+const body = document.querySelector("body");
 
-
-hbtn.addEventListener('click', function () {
+hbtn.addEventListener('click', () => {
   hbtn.classList.toggle('active');
   submenu.classList.toggle('off');
+  body.classList.toggle('overflow');
 });
 
 for (let i = 0; i < closesbm.length; i++) {
-  closesbm[i].addEventListener('click', function () {
+  closesbm[i].addEventListener('click', () => {
     hbtn.classList.remove('active');
     submenu.classList.add('off');
+    body.classList.remove('overflow');
   });
 }
 
 //////////////////////////////
-
 
 document.addEventListener('scroll', () => {
 

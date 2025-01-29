@@ -10,16 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="icon" type="image/x-icon" href="/imgs/logo.png">
   <meta name="theme-color" content="#212121">
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", () => {
       var originalTitle = document.title;
       var blinkingTitle = "Academia";
       var isBlinking = false;
 
-      setInterval(function () {
+      setInterval(() => {
         if (isBlinking) {
           document.title = originalTitle;
         } else {
@@ -68,7 +67,7 @@
         <q data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000"><span class="slogan">Transforme seu corpo,
             desperte sua força</span></q>
       </p>
-      <a href="#" class="agendamento">AGENDE JÁ</a>
+      <a class="agendamento">AGENDE JÁ</a>
     </div>
 
     <section id="show-header">
@@ -176,9 +175,7 @@
           <span class="SubTitulo" data-aos="zoom-out">ENDEREÇO</span>
           <br>
           <div class="enderecos">
-            <a data-aos="zoom-in" target="_blank"
-              href="https://www.google.com/maps/search/?api=1&query=Xique-Xique,+Bahia"><i
-                class="fas fa-location-dot"></i>&nbsp; Xique-Xique, BA</a>
+            <a data-aos="zoom-in" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Xique-Xique,+Bahia"><i class="fas fa-location-dot"></i>&nbsp; Xique-Xique, BA</a>
             <br>
             <a data-aos="zoom-in" href="telprompt://0? handleType=phoneNumber"><i class="fas fa-phone"></i>&nbsp; (21)
               98765-4321</a>
@@ -189,8 +186,7 @@
       </section>
 
       <section class="informations">
-        Site created by <a style="color: var(--CorPrincipal); text-decoration: none" href="https://marcoseduardo.dev.br"
-          target="_blank">@eduardo_c126</a>, all rights reserved!
+        Site created by <a style="color: var(--CorPrincipal); text-decoration: none" href="https://marcoseduardo.dev.br" target="_blank">@eduardo_c126</a>, all rights reserved!
       </section>
     </section>
   </main>

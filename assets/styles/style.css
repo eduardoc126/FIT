@@ -28,8 +28,12 @@
 }
 
 body {
-  font-family: Impact, 'Trebuchet MS';
+  font-family: Impact, 'Trebuchet MS', sans-serif;
   margin: 0 auto;
+}
+
+.overflow{
+  overflow: hidden;
 }
 
 html {
